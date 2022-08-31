@@ -8,8 +8,14 @@
 
 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 	"dockerFile": "../Dockerfile",
-	"workspaceMount": "source=${localWorkspaceFolder}/scratch,target=//workspace/ns-3-allinone/ns-3.36.1/scratch,type=bind,consistency=delegated",
+
 	"workspaceFolder": "/workspace/ns-3-allinone/ns-3.36.1"
+
+	// Uncomment to persist src
+	//"workspaceMount": "source=${localWorkspaceFolder}/src,target=/workspace/ns-3-allinone/ns-3.36.1/src,type=bind,consistency=delegated",
+
+	// Uncomment to persist scratch 
+	//"workspaceMount": "source=${localWorkspaceFolder}/scratch,target=/workspace/ns-3-allinone/ns-3.36.1/scratch,type=bind,consistency=delegated",
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
